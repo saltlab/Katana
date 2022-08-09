@@ -1,0 +1,11 @@
+*.egg-info/
+.DS_Store
+.module_log
+**/build/
+*.tar.gz
+.vscode/
+__pycache__/
+
+package-lock.json
+node_modules/*
+gtrans/data_process/processed.txt

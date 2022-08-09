@@ -1,0 +1,7 @@
+create -languages Web /path-to-data-directory/001/001.und
+add /path-to-data-directory/001
+analyze -all
+
+create -languages Web /path-to-data-directory/002/002.und
+add /path-to-data-directory/002
+analyze -all

@@ -1,0 +1,16 @@
+{
+  "name": "katana",
+  "version": "1.0.0",
+  "description": "-  Install `nodegit`, `fs` and `csv-parser` using `npm install nodegit csv-parser fs` -  Download JS repositories using `node download_repos.js` -  Install pydriller `pip install pydriller` -  Mine commits from the downloaded repositories using `python commitminer.py`",
+  "main": "download_repos.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "csv-parser": "^3.0.0",
+    "fs": "0.0.1-security",
+    "nodegit": "^0.27.0"
+  }
+}

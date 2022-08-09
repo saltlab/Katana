@@ -1,0 +1,72 @@
+[
+    {
+        "file": "loops.js",
+        "line_num": 10,
+        "expected_output": "function removeHtmlMarkup(s) {let tag = false;let quote = false;for (let c of s) {for (let i = 0; i < 5; i++) {if (c === '<' && !quote) {tag = true; // slice}}}}"
+    },
+    {
+        "file": "loops.js",
+        "line_num": 37,
+        "expected_output": "let sum = 1;let x = window.prompt(\"Input\");while (x >= 0){sum = sum + x;x = window.prompt(\"Input\");}console.log(\"The total is\",sum); // slice"
+    },
+    {
+        "file": "conditionals.js",
+        "line_num": 12,
+        "expected_output": "function removeHtmlMarkup(s) {let tag = false;let quote = false;for (let c of s) {for (let i = 0; i < 5; i++) {if (c === '<' && !quote) {tag = true;} else if (c === '>' && !quote) {tag = false; // slice}}}}"
+    },
+    {
+        "file": "conditionals.js",
+        "line_num": 14,
+        "expected_output": "function removeHtmlMarkup(s) {let tag = false;let quote = false;for (let c of s) {for (let i = 0; i < 5; i++) {if (c === '<' && !quote) {tag = true;} else if (c === '>' && !quote) {tag = false; // slice} else if (c === '\"' || c === \"'\" && tag) {quote = !quote; // slice}}}}"
+    },
+    {
+        "file": "conditionals.js",
+        "line_num": 18,
+        "expected_output": "function removeHtmlMarkup(s) {let tag = false;let quote = false;let out = '';for (let c of s) {for (let i = 0; i < 5; i++) {if (c === '<' && !quote) {tag = true;} else if (c === '>' && !quote) {tag = false; // slice} else if (c === '\"' || c === \"'\" && tag) {quote = !quote; // slice} else if (!tag) {out = out + c;} else {tag = out + quote; //slice}}}}"
+    },
+    {
+        "file": "conditionals.js",
+        "line_num": 31,
+        "expected_output": "function getExamGrade(marks, threshold) {marks = marks / threshold;if (marks > 95)return \"Grade: A+ with marks\" + marks;}"
+    },
+    {
+        "file": "conditionals.js",
+        "line_num": 46,
+        "expected_output": "function getExamGradeWithThreshold(marks, threshold) {marks = marks / threshold;if (marks > 95) {if (marks + threshold > 100)return marks + ' 100';}}"
+    },
+    {
+        "file": "conditionals.js",
+        "line_num": 74,
+        "expected_output": "function removeHtmlMarkupWithoutBraces(s) {let tag = false;let quote = false;for (let c of s) {for (let i = 0; i < 5; i++) {if (c === '<' && !quote)tag = true;else if (c === '>' && !quote)tag = false;else if (c === '\"' || c === \"'\" && tag)quote = !quote;}}}"
+    },
+    {
+        "file": "objects.js",
+        "line_num": 10,
+        "expected_output": "let obj = [{fruit: 'apple',color: 'red',variant: ['red', 'green'] // slice}];module.exports = {obj // slice};"
+    },
+    {
+        "file": "objects.js",
+        "line_num": 17,
+        "expected_output": "let obj = [{fruit: 'apple',color: 'red',variant: ['red', 'green'] // slice}];const label = 'Color';const newObj = obj.forEach(o => console.log(o)).map(o => label + ' ' + o.color) // slice.filter(o => o.variant.includes('red')).sort();"
+    },
+    {
+        "file": "conditionals.js",
+        "line_num": 48,
+        "expected_output": "function getExamGradeWithThreshold(marks, threshold) {marks = marks / threshold;if (marks > 95) {if (marks + threshold > 100)return marks + ' 100';elsereturn `Grade: A+ with marks ${marks}`; // slice}}"
+    },
+    {
+        "file": "conditionals.js",
+        "line_num": 34,
+        "expected_output": "function getExamGrade(marks, threshold) {marks = marks / threshold;if (marks > 95)return \"Grade: A+ with marks\" + marks;else if (marks < 94 && marks > 80)return \"Grade: A with marks\" + marks;else if (marks < 80 && marks > 70) // slicereturn \"Grade: B with marks\" + marks;}"
+    },
+    {
+        "file": "conditionals.js",
+        "line_num": 50,
+        "expected_output": "function getExamGradeWithThreshold(marks, threshold) {marks = marks / threshold;if (marks > 95) {if (marks + threshold > 100)return marks + ' 100';elsereturn `Grade: A+ with marks ${marks}`; // slice} else if (marks < 94 && marks > 80) {return `Grade: A with marks ${marks}`; // slice}}"
+    },
+    {
+        "file": "objects.js",
+        "line_num": 5,
+        "expected_output": "let obj = [{fruit: 'apple',color: 'red',variant: ['red', 'green'] // slice}];"
+    }
+]
