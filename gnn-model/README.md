@@ -1,6 +1,6 @@
 Steps how to run the GNN architecture on [Hoppity](https://openreview.net/pdf?id=SJeqs6EFvB)'s 
 
-- Extract the `sliced_hoppity.tar.gz` located in `./hoppity-data/`
+- Extract the `sliced_data.tar.gz` located in `./hoppity-data/`
 
 # HOW TO CREATE A NEW CONDA ENVIRONMENT?
 Assuming the name of the conda environment we want to create is `model`. 
