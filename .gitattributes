@@ -1,0 +1,2 @@
+gnn-model/hoppity-data/unsliced_data.tar.gz filter=lfs diff=lfs merge=lfs -text
+gnn-model/hoppity-data/sliced_data.tar.gz filter=lfs diff=lfs merge=lfs -text
