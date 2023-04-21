@@ -6,7 +6,7 @@
 [Katana: Dual Slicing-Based Context for Learning Bug Fixes](https://arxiv.org/pdf/2205.00180.pdf),
 Published at ACM Transactions on Software Engineering and Methodology (TOSEM), 2023.
 
-### Project Structure
+## Project Structure
 - The dual sliced data is present in `sliced_data.tar.gz` in the `./gnn-model/hoppity-data/`.
 - The unsliced data is present in `unsliced_data.tar.gz` in the `./gnn-model/hoppity-data/`.
 
